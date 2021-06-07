@@ -1,0 +1,33 @@
+{
+    "name": "brooksyang/chia-utils",
+    "description": "Chia(XCH) Utils",
+    "license": "MIT",
+    "type": "library",
+    "homepage": "https://github.com/BrooksYang/chia-utils",
+    "authors": [
+        {
+            "name": "Brooks Yang",
+            "homepage": "https://github.com/BrooksYang",
+            "role": "Author"
+        }
+    ],
+    "keywords": [
+        "brooksyang",
+        "chia",
+        "chia-utils",
+        "chia-php",
+        "chia-api",
+        "chia-address",
+        "chia-puzzle-hash",
+        "chia-coin"
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "brooksyang/bech32m": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BrooksYang\\ChiaUtils\\": "src/"
+        }
+    }
+}
