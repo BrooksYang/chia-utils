@@ -120,7 +120,7 @@ class ChiaUtils
      */
     public function getCoinInfo($parentCoinInfo, $puzzleHash, $amount)
     {
-        $amount = $amount * pow(10, 12);
+        $amount = bcmul($amount, pow(10, 12), 0);
         if (stripos($parentCoinInfo, '0x') == 0) {
             $parentCoinInfo = substr($parentCoinInfo, 2);
         }
